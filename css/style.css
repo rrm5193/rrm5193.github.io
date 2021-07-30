@@ -2,6 +2,7 @@
 
 body{
     background-color: #02132d;
+	width: 100%;
 }
 
 nav button {
@@ -9,12 +10,22 @@ nav button {
     background-color: navy;
 }
 
-.carousel .item {
-  height: 700px;
-}
 .carousel-item img{
     padding-top: 55px;
-    max-height: 700px;
+    height: 75vh;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: none;
+	margin-bottom: 2em;
+}
+
+.carousel {
+	box-shadow: 0px 0px 16px rgb(0 0 0 / 90%);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -46,6 +57,32 @@ article ul li , #Contact .row ul li{
     float: left;
 }
 
+#About {
+	width: 100%;
+	box-shadow: inset 0px 0px 16px rgb(0 0 0 / 90%);
+	background: #1c1c1c;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+
+#About img{
+	width: 40%;
+	margin: 5%;
+}
+
+#blurb{
+	width: 40%;
+}
+
+#About h1 {
+	border-bottom: 1px solid white;
+	width: 80%;
+	margin-bottom: .5em;
+}
+
 #About img {
     border-radius: 50%;
     border: 2px white;
@@ -54,6 +91,78 @@ article ul li , #Contact .row ul li{
     max-height: 15em;
     padding: 0;
 }
+
+#Skills {
+	display: flex;
+	flex-direction: row;
+	background: #dce2e3;
+	box-shadow: 0px 4px 16px black, 0px -2px 16px black ;
+	margin-bottom: 0;
+}
+
+#skillBox {
+	width: 45%;
+	margin: 2.5%;
+}
+
+#skillBox h2 {
+	color: black;
+	border-bottom: 1px solid black;
+}
+
+#skillBox ul {
+	list-style: none;
+	padding: 0.5em;
+}
+
+#skillBox ul li{
+	color: black;
+	display: flex;
+	flex-direction: row;
+}
+
+#skillBox ul li i{
+	width: 10%;
+	margin: 0;
+	color: black;
+}
+
+#skillBox ul li span{
+	width: 90%;
+	margin: 0;
+}
+
+#toolBox {
+	width: 45%;
+	margin: 2.5%;
+}
+
+#toolBox h2 {
+	color: black;
+	border-bottom: 1px solid black;
+}
+
+#toolBox ul {
+	list-style: none;
+	padding: 0.5em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#toolBox ul li{
+	width: 20%;
+	margin: 5%;
+	color: black;
+	flex-direction: column;
+	text-align: center;
+}
+
+#toolBox ul li img {
+	width: 60%;
+	margin: 0;
+}
+
 
 #Contact .row img {
     border-radius: 50%;
@@ -120,6 +229,10 @@ i{
 
 i:hover{
     color: aqua;
+}
+
+.navbar {
+	box-shadow: 0px 0px 16px rgb(0 0 0 / 90%);
 }
 
 form {
