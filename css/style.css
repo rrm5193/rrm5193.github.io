@@ -165,6 +165,46 @@ article ul li , #Contact .row ul li{
 	margin: 0;
 }
 
+#projectContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 1.5rem;
+}
+
+.projectBlurb {
+	width: 45%;
+	margin: 2.5%;
+	margin-bottom: 2.5em;
+	margin-top: 0;
+	flex-direction: column;
+	border-radius: 25px;
+	transition: .7s;
+	box-shadow: 0px 0px 16px rgb(0 0 0 / 90%);
+}
+
+.projectBlurb:hover {
+	width: 49%;
+	margin: 0.5%;
+}
+
+.projectBlurb img{
+	width: 100%;
+	margin: 0;
+	border-radius: 25px 25px 0 0;
+}
+
+.projectBlurb h2 {
+	padding: 0.5em;
+	width: 100%;
+	font-size: 1em;
+	margin: 0;
+	text-align: center;
+	color: whitesmoke;
+	background: black;
+	border-radius: 0 0 25px 25px;
+}
+
 #Contact .row img {
     border-radius: 50%;
     border: 2px black;
