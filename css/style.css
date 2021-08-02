@@ -71,10 +71,13 @@ article ul li , #Contact .row ul li{
 #About img{
 	width: 40%;
 	margin: 5%;
+	margin-top: 2.5%;
+	align-self: center;
 }
 
 #blurb{
 	width: 40%;
+	align-self: center;
 }
 
 #About h1 {
@@ -98,11 +101,15 @@ article ul li , #Contact .row ul li{
 	background: #dce2e3;
 	box-shadow: 0px 4px 16px black, 0px -2px 16px black ;
 	margin-bottom: 0;
+	
+	height: 30vh;
 }
 
 #skillBox {
-	width: 45%;
-	margin: 2.5%;
+	width: 35%;
+	margin: 7.5%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
 }
 
 #skillBox h2 {
@@ -111,6 +118,8 @@ article ul li , #Contact .row ul li{
 }
 
 #skillBox ul {
+	margin-left: 10%;
+	width: 80%;
 	list-style: none;
 	padding: 0.5em;
 }
@@ -133,8 +142,10 @@ article ul li , #Contact .row ul li{
 }
 
 #toolBox {
-	width: 45%;
-	margin: 2.5%;
+	width: 35%;
+	margin: 7.5%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
 }
 
 #toolBox h2 {
@@ -143,6 +154,8 @@ article ul li , #Contact .row ul li{
 }
 
 #toolBox ul {
+	margin-left: 10%;
+	width: 80%;
 	list-style: none;
 	padding: 0.5em;
 	display: flex;
@@ -153,7 +166,7 @@ article ul li , #Contact .row ul li{
 #toolBox ul li{
 	width: 15%;
 	max-height: 20%;
-	margin: 5%;
+	margin: auto;
 	color: black;
 	flex-direction: column;
 	text-align: center;
@@ -161,7 +174,8 @@ article ul li , #Contact .row ul li{
 }
 
 #toolBox ul li img {
-	width: 100%;
+	max-width: 100%;
+	height: 100%;
 	margin: 0;
 }
 
@@ -173,8 +187,8 @@ article ul li , #Contact .row ul li{
 }
 
 .projectBlurb {
-	width: 45%;
-	margin: 2.5%;
+	width: 30%;
+	margin: 1.5%;
 	margin-bottom: 2.5em;
 	margin-top: 0;
 	flex-direction: column;
@@ -184,17 +198,19 @@ article ul li , #Contact .row ul li{
 }
 
 .projectBlurb:hover {
-	width: 49%;
-	margin: 0.5%;
+	width: 33%;
+	margin: 0%;
 }
 
 .projectBlurb img{
 	width: 100%;
+	height: 90%;
 	margin: 0;
 	border-radius: 25px 25px 0 0;
 }
 
 .projectBlurb h2 {
+	height: 10%;
 	padding: 0.5em;
 	width: 100%;
 	font-size: 1em;
@@ -203,6 +219,10 @@ article ul li , #Contact .row ul li{
 	color: whitesmoke;
 	background: black;
 	border-radius: 0 0 25px 25px;
+}
+
+#Contact {
+	width: 60%;
 }
 
 #Contact .row img {
@@ -285,6 +305,15 @@ form {
     background-color: rgba(0, 0, 0, .7);
     border: 2px solid gold;
     border-style: groove;
+}
+
+#Contact form button {
+	width: 10%;
+	height: 2rem;
+}
+
+#Contact form button i{
+	width: 100%;
 }
 
 label {
