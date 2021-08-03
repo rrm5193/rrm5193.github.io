@@ -43,6 +43,7 @@ h1{
 .modal-header h2{
     color: navy;
     padding: .2em;
+	margin-right: 0;
 }
 
 p,li,a, label {
@@ -353,4 +354,22 @@ button{
 
 #Contact .row img{
     margin: auto;
+}
+
+.modal-body {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	box-shadow: inset 0px 0px 16px rgb(0 0 0 / 90%);
+	background: #1c1c1c;
+	color: white;
+}
+.modal-body p {
+	color: white;
+}
+.modal-body iframe{
+	width: 90%;
+	height: 30vh;
+	margin: auto;
+	align-self: center;
 }
