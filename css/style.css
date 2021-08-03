@@ -235,11 +235,6 @@ article ul li , #Contact .row ul li{
     padding: 0;
 }
 
-.modal-body h2, .modal-body p{
-    color: black;
-    text-align: center;
-}
-
 .modal-body a{
     color:blue;
     text-align: center;
@@ -363,13 +358,56 @@ button{
 	box-shadow: inset 0px 0px 16px rgb(0 0 0 / 90%);
 	background: #1c1c1c;
 	color: white;
+	text-align: center;
 }
+
+.modal-body h2 {
+	color: whitesmoke;
+	width: 100%;
+	font-size: 1.25rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.modal-body h3 {
+	width: 75%;
+	padding: 0.5em;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;	
+	font-size: 0.75rem; 
+	color: whitesmoke;
+	border-image-source: linear-gradient(to right, transparent, whitesmoke, transparent);
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+}
+
 .modal-body p {
 	color: white;
+	width: 75%;
+	margin: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 .modal-body iframe{
-	width: 90%;
+	width: 80%;
 	height: 30vh;
 	margin: auto;
 	align-self: center;
+}
+
+.modal-footer {
+	background: #dddddd;
+	border:none;
+	border-radius: 0 0 25px 25px;
+	box-shadow: 0px 0px 8px rgb(0 0 0 / 90%);
+}
+
+.modal-footer button{
+	background: #4c4c4c;
+	box-shadow: opx opx 2px rgb(0 0 0 / 90%);
+}
+
+.modal-content {
+	border-radius: 25px;
 }
