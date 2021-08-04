@@ -235,19 +235,6 @@ article ul li , #Contact .row ul li{
     padding: 0;
 }
 
-.modal-body a{
-    color:blue;
-    text-align: center;
-    margin: auto;
-}
-
-.modal-body a:hover{
-    color:darkmagenta;
-}
-.modal-body img{
-    margin: auto;
-}
-
 article {
     padding: 2em;
 }
@@ -361,6 +348,23 @@ button{
 	text-align: center;
 }
 
+.modal-body a{
+    color:blue;
+    text-align: center;
+    margin: auto;
+}
+
+.modal-body a:hover{
+    color:darkmagenta;
+}
+
+.modal-body img{
+    margin: auto;
+	width: 50%;
+	border: groove 2px whitesmoke;
+}
+
+
 .modal-body h2 {
 	color: whitesmoke;
 	width: 100%;
@@ -410,4 +414,34 @@ button{
 
 .modal-content {
 	border-radius: 25px;
+}
+
+#GiffyImg{
+	display: flex;
+	width: 80%;
+	margin: auto;
+	margin-bottom: 0;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#GiffyImg img{
+	width: 45%;
+	height: 20vh;
+	margin: 2.5%;
+	border: groove 2px whitesmoke;
+}
+
+#ProjectLink{
+	width: 20%;
+	margin: auto;
+	margin-left: 40%;
+}
+
+#ProjectLink a {
+	color: white;
+}
+
+#ProjectLink a:hover {
+	color: lightgray;
 }
