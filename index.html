@@ -83,8 +83,12 @@
 				<h2>Hang Time</h2>
 			</div>
 			<div class="projectBlurb">
-				<img src="./images/L_Orb.png" data-toggle="modal" data-target="#FXDesignModal">
-				<h2>Stoutheart: Broken Spirits</h2>
+				<img src="./images/SpaceStation_02.png" data-toggle="modal" data-target="#SpaceModal">
+				<h2>Space Station</h2>
+			</div>
+			<div class="projectBlurb">
+				<img src="./images/Visualizer.png" data-toggle="modal" data-target="#VisualizerModal">
+				<h2>3D Audio Visualizer</h2>
 			</div>
 		</div>
     </div>
@@ -182,7 +186,7 @@
     <!---Contact Info Section--->
     <div class="container" id="Contact">
         <h1>Contact</h1>
-        <form method="post" action="/~rrm5193/230/portfolio/index.html ">
+        <!---<form method="post" action="/~rrm5193/230/portfolio/index.html ">
 			<label>Name</label>
 			<input name="name" placeholder="Type Here">
 
@@ -201,7 +205,7 @@
 			<button id="submit" name="submit" type="submit" value="Submit" class="d-flex justify-content-center">
 				<i class="fas fa-envelope"></i>
 			</button>
-		</form>
+		</form>--->
 		<div class="row">
 			<img src="./images/logo.png" class="d-flex justify-content-center col-lg-12 col-md-12 col-sm-12 col-xs-12" alt="My logo">
 			<h4 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Ryan Montero</h4>
@@ -271,7 +275,7 @@
 		</div>
 	</div>
     <div class="modal fade" id="HangTimeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h2>Hang Time</h2>
@@ -292,19 +296,21 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="FXDesignModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+    <div class="modal fade" id="SpaceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h2>FX side projects</h2>
+            <h2>Space Station</h2>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-              <img src="images/spheres.png" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center">
-              <img src="images/L_Orb.png" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center">
-              <p>Mini-side projects I've done to experiment with special effects in Unity. These effects where created through the Unity Engine's built in Particle Systems and ShaderGraph</p>
+              <iframe src="videos/SpaceStation_02.mp4"></iframe>
+              <p>A sci-fi setting I created to practice optimization techniques on a project I made as performance intensive as I possibly could. 
+			  The main techniques I employed were HLOD clusters and scene loading.</p>
+			  <iframe src="videos/SpaceStation_01.mp4"></iframe>
+			  <p>All assets where sourced from the Epic marketplace.</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -312,68 +318,35 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="SkyWalk" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade" id="VisualizerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-              <div class="modal-header">
-                <h2 >SkyWalk</h2>
+				<div class="modal-header">
+                <h2 >3D Audio Visualizer</h2>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
-                  <p>A side-scroller Shoot em up, with all art drawn by me, and coding completed in collaboration with a friend. This project was made within PixiJS, with all classes and collision in the project being my contribution.</p>
-                  <a href="https://people.rit.edu/rrm5193/230/project1/index.html" class="d-flex justify-content-center">SkyWalk</a>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-        </div>
+					<div class="modal-body">
+						<iframe src="videos/VisualizerPreview.mp4"></iframe>
+						<p>This visualizer was developed using only JavaScript and canvas element to analyze audio from any given song, and use the data from wavelengths or frequency to plot points across either a 
+						sphere. The sphere itself is a 3D projection using the z-coordinate of a point to alter the diameter of a given point and there by presenting the illusion of depth.</p>
+						<div id="GiffyImg">
+							<iframe src="videos/BezierGif.mp4"></iframe>
+							<iframe src="videos/GlobeGif.mp4"></iframe>
+						</div>
+						<p> A similar process is applied to the center ring where the points are used to connect a series of bezier curves. The initial positions are set along the equater of the sphere, with the height of each point being based
+						on the incoming audio data. From there a projection is mapped for each set of points to determine how the influence for each curve should be altered.</p>
+						<button type="button" class="btn btn-secondary" id="ProjectLink">
+							<a href="https://people.rit.edu/rrm5193/330/Project-2/">Try it out here!</a>
+						</button>	  
+					</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				  </div>
+			</div>
+		</div>
     </div>
-    <div class="modal fade" id="ArcticRising" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h2 >Arctic Rising</h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                  <p>A side-scroller shoot em up created in Unity. The game was built from a provided class template that I tweaked to improve gameplay. This tweaking included refactoring the code to change collisions and enemy movement. All art was made by me in photoshop.</p>
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KOuEVPAH6UI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="Asteroids" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h2 >Asteroids</h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                  <p>A recreation of the classic arcade game, I developed this project within Unity. All art was developed in PhotoShop, and all code was developed by me in C#. This included Phsycics based calculations for the ship and asteroids, and my own collisions algorithms.</p>
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/98a8LIEwsBA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-        </div>
-    </div>
-
 	<!--- End of Modals --->  
     
     <!--- Php for contact section --->

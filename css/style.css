@@ -199,8 +199,9 @@ article ul li , #Contact .row ul li{
 }
 
 .projectBlurb:hover {
-	width: 33%;
+	width: 32%;
 	margin: 0%;
+	margin-top: -.75%;
 }
 
 .projectBlurb img{
@@ -226,12 +227,17 @@ article ul li , #Contact .row ul li{
 	width: 60%;
 }
 
+#Contact h1 {
+	margin-bottom: 2rem;
+}
+
 #Contact .row img {
     border-radius: 50%;
     border: 2px black;
     border-style: groove;
     max-width: 15em;
     max-height: 15em;
+	margin-bottom: 2rem;
     padding: 0;
 }
 
@@ -336,6 +342,7 @@ button{
 
 #Contact .row img{
     margin: auto;
+	margin-bottom: 2rem;
 }
 
 .modal-body {
@@ -426,6 +433,13 @@ button{
 }
 
 #GiffyImg img{
+	width: 45%;
+	height: 20vh;
+	margin: 2.5%;
+	border: groove 2px whitesmoke;
+}
+
+#GiffyImg iframe{
 	width: 45%;
 	height: 20vh;
 	margin: 2.5%;
